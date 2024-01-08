@@ -1,0 +1,15 @@
+.session-container {
+  background-color: rgb(7, 80, 158);
+}
+
+.session-wrap {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  /* padding-left: 165px; */
+}
+
+.session-container h6 {
+  font-size: 42px;
+  color: #fff;
+}

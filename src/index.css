@@ -1,13 +1,315 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+p,
+h6 {
+  margin: 0;
+}
+
+.App {
+  /* width: 1200px;
+  margin: auto; */
+}
+.primary {
+  background: transparent;
+  border: 2px solid rgb(7, 80, 158);
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: rgb(7, 80, 158);
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+}
+
+.card-container {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 370px;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  transform: translate(-60px, -60px);
+  border-radius: 4px;
+}
+
+.card-header {
+  border: 2px solid #034ea2;
+  position: relative;
+}
+
+.card-header h3 {
+  font-size: 36px;
+  color: rgb(7, 80, 158);
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0px;
+}
+.card-header p {
+  font-size: 20px;
+  color: rgb(7, 80, 158);
+  position: absolute;
+  left: 52px;
+  background: #fff;
+  bottom: -22px;
+  padding: 10px 24px;
+}
+
+.card-info {
+  padding: 40px 0px 16px 0px;
+  font-size: 16px;
+}
+
+.event-card {
+  background-color: rgb(7, 80, 158);
+  color: #fff;
+  width: 100%;
+}
+
+.line-300 {
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.keynote-container {
+  width: 100%;
+  height: 100vb;
+  background-color: #034ea2;
+}
+
+.scroll-section-outer {
+  overflow: hidden;
+  margin-top: 160px;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-left: 30px;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  overflow: hidden;
+  margin: 80px auto;
+  padding: 80px 0px;
+  background-color: rgb(7, 80, 158);
+  border-radius: 60px;
+}
+.marquee {
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+  color: #fff;
+  align-items: center;
+}
+
+.marquee__inner span {
+  font-size: 10vw;
+  font-weight: 900;
+  padding: 0 2vw;
+  text-transform: uppercase;
+  margin-right: 5vw;
+  margin-bottom: 20px;
+}
+
+.marquee-wrap {
+  display: flex;
+  border: 2px solid #fff;
+  width: 410px;
+  gap: 20px;
+  background: #fff;
+  color: #000;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+.marquee-wrap img {
+  width: 90px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.marquee-wrap h6 {
+  font-size: 24px;
+  color: #034ea2;
+}
+
+.marquee-wrap p {
+  font-size: 16px;
+  width: 300px;
+  overflow-wrap: break-word;
+  white-space: break-spaces;
+}
+
+.first {
+  transform: translateX(80%);
+}
+
+.second {
+  transform: translateX(-80%);
+}
+
+.split-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 190px;
+  width: 100%;
+}
+
+.horizontal-scroll {
+  margin-bottom: 0;
+}
+
+.split-container .text,
+.split-container .horizontal-scroll {
+  font-size: 60px;
+  font-weight: 900;
+}
+.text > p {
+  background: linear-gradient(to right, rgb(255, 255, 255) 50%, #0b3f7a 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: -250px;
+  margin-left: 50px;
+}
+
+.horizontal-scroll > p {
+  background: linear-gradient(to right, #034ea2 50%, #5c96d7 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: -250px;
+  margin-left: 50px;
+}
+
+.speaker-img-wrap {
+  width: 200px;
+  height: 252p;
+}
+
+.speaker-img-wrap img {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 12px;
+}
+
+.name,
+.details,
+.place {
+  font-size: 18px;
+  transform: translateY(20px);
+  color: rgb(3, 78, 162);
+  /* opacity: 0; */
+}
+
+.details {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px !important;
+  text-decoration: none;
+  color: rgb(109, 110, 113);
+}
+
+.place {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px !important;
+  text-decoration: none;
+  color: rgb(3, 78, 162);
+}
+
+#counter {
+  height: 1em;
+  overflow: hidden;
+}
+
+.digits {
+  float: left;
+  list-style-type: none;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.digits-first {
+  margin-top: -20px;
+}
+
+.digits-second {
+  margin-top: 0em;
+}
+
+.digits-third {
+  margin-top: -20px;
+}
+
+.digits {
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+}
+
+.luckie {
+  animation-name: luckie;
+}
+
+.current {
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+/* Animations */
+@keyframes luckie {
+  100% {
+    margin-top: -20em;
+  }
 }

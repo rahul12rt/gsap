@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HeroSection from "./components/heroSection";
+import KeyNoteSpeakers from "./components/keyNoteSpeakers";
+import PastSpeakers from "./components/pastSpeakers";
+import SessionTopics from "./components/sessionsTopics";
+import Clients from "./components/clients";
+import Hero from "./components/Hero";
 
-function App() {
+gsap.registerPlugin(ScrollTrigger);
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Header /> */}
+      <Hero />
+      <SessionTopics />
+      {/* <Clients /> */}
+      {/* <HeroSection /> */}
+      <PastSpeakers />
+      <KeyNoteSpeakers />
     </div>
   );
-}
+};
 
 export default App;
